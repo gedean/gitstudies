@@ -1,19 +1,21 @@
 # my class
+require 'date'
+
 class Person
   attr_reader :name
 
-  def initialize name:, age:
-    @name, @age = name, age
+  def initialize name:, birthday:
+    @name, @birthday = name, birthday
   end
 
   def meet
-    "Hello, #{@name}, age: #{@age}"
+    "Hello, #{@name}, age: #{@birthday}"
   end
 end
 
 # estrutura que armazena estado (dados = variáveis) e comportamento (métodos)
 
 # Person.new = Instância da class Person
-eldson = Person.new name: 'Eldson Soares', age: 24
+eldson = Person.new name: 'Eldson Soares', birthday: '11/10/1995'
 
 p eldson.meet
