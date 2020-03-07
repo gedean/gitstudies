@@ -1,0 +1,2 @@
+O que é o git?
+  - sistema para versionamento de código (na verdade de qualquer arquivo)
